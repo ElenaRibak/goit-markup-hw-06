@@ -648,7 +648,7 @@ element.style {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
-  background: tr;
+  background: #2f303a;
 }
 
 .footer-form-input:hover,
@@ -858,6 +858,7 @@ element.style {
   position: absolute;
   top: 8px;
   right: 8px;
+  outline: none;
   background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
@@ -889,6 +890,7 @@ element.style {
 
 .form-field {
   margin-bottom: 10px;
+
 }
 
 .form-input {
@@ -896,10 +898,15 @@ element.style {
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  padding-left: 30px;
+  padding-left: 42px;
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-input {
+  cursor: pointer;
+  outline: none;
 }
 
 .form-input:hover,
@@ -930,10 +937,16 @@ element.style {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.form-text {
+  cursor: pointer;
+  outline: none;
+}
+
 .form-text:hover,
 .form-text:focus {
   border-color: #2196f3;
 }
+
 .input-text {
   font-weight: 400;
   font-size: 12px;
@@ -982,6 +995,7 @@ element.style {
   border: 2px solid #212121;
   border-radius: 4px;
   margin-right: 8.38px;
+  margin-left: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -990,6 +1004,11 @@ element.style {
 .policy-icon {
   fill: transparent;
 }
+
+.policy-icon {
+  cursor: pointer;
+}
+
 .policy-check:checked + .check-text span {
   border: none;
   background-color: var(--accent-color);
